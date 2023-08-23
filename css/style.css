@@ -706,13 +706,9 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-.footer-information {
-  padding-top: 16px;
-}
 
 .footer-subscription {
   margin-top: 12px;
-  margin-left: 80px;
 }
 
 .footer-email-input {
@@ -805,6 +801,7 @@ body {
 .form-textarea {
   padding-left: 16px;
   resize: none;
+  height: 120px;
 }
 
 .form-input:hover,
