@@ -35,6 +35,7 @@ html {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -59,8 +60,13 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .section.no-top-padding {
@@ -68,9 +74,20 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 428px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+  }
 }
 
 .visually-hidden {
@@ -140,11 +157,22 @@ body {
 }
 
 .nav-menu {
-  margin-left: 93px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 120px;
+    gap: 30px;
+  }
 }
 
 .contacts-menu {
-  margin-left: 298px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 90px;
+  }
 }
 
 .nav-menu .item:not(:last-child),
@@ -215,11 +243,18 @@ body {
 
 .hero-title {
   color: var(--whitecolor);
-  font-size: 56px;
+  font-size: 6px;
   font-weight: 700;
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    align-items: center;
+    text-align: center;
 }
 
 .button {
