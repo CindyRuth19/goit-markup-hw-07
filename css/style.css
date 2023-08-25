@@ -355,8 +355,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-self: stretch;
-  margin: 0;
-  padding: 0;
 
   @media screen and (min-width: 1158px) {
     flex-wrap: nowrap;
@@ -1250,7 +1248,7 @@ body {
 }
 
 .mob-menu-list {
-  margin-bottom: 300px;
+  margin-bottom: 230px;
   padding: 20px;
 }
 
