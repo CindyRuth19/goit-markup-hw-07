@@ -171,12 +171,10 @@ body {
   @media screen and (min-width: 768px) {
     display: inline;
     margin-left: auto;
-    gap: -30px;
   }
 
   @media screen and (min-width: 1158px) {
     display: flex;
-    margin-left: 290px;
     gap: 20px;
   }
 }
@@ -1240,7 +1238,7 @@ body {
 }
 
 .mob-menu-list {
-  margin-bottom: 400px;
+  margin-bottom: 300px;
   padding: 20px;
 }
 
@@ -1275,7 +1273,7 @@ body {
 
 .mob-address-link {
   color: var(--navyblue);
-  padding: 40px;
+  margin-bottom: 80px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1288,7 +1286,7 @@ body {
 .mob-address.tel {
   width: 100%;
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .mob-address.mail {
