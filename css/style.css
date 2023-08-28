@@ -113,6 +113,7 @@ body {
 .menu {
   justify-content: space-between;
   height: 70px;
+  position: relative;
 }
 
 .page-header {
@@ -388,6 +389,10 @@ body {
   margin: 0;
   padding: 0;
 
+  @media screen and (min-widt: 768px) {
+    justify-content: space-between;
+  }
+
   @media screen and (min-width: 1158px) {
     flex-wrap: nowrap;
     column-gap: 12px;
@@ -582,7 +587,9 @@ body {
   gap: 72px;
 
   @media screen and (min-width: 768px) {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1158px) {
@@ -608,6 +615,7 @@ body {
     flex-basis: calc((100% - 30px) / 2);
     padding-bottom: 30px;
     background-color: var(--whitecolor);
+    max-width: 264px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -897,6 +905,13 @@ body {
   }
 }
 
+.footer-email-label {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+  }
+}
+
 .footer-email-input {
   padding: 8px 16px;
   background-color: var(--navyblue);
@@ -1076,8 +1091,12 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-widt: 428px) {
+  @media screen and (min-width: 428px) {
     height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 408px;
   }
 }
 
@@ -1325,7 +1344,7 @@ body {
 
 .mob-contact-social {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
 }
 
 /* Mobile Socials */
@@ -1333,6 +1352,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 48px;
+  width: 90%;
 }
 
 .mob-social-item {
@@ -1367,10 +1387,6 @@ body {
 .mob-address-list {
   margin: 0;
   padding: 0;
-}
-
-.mob-social-item {
-  margin-bottom: 80px;
 }
 
 .mob-social-link {
